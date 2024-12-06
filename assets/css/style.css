@@ -42,3 +42,37 @@ html {
 body {
     font-size: var(--font-size-base);
 }
+
+nav ul {
+    display: flex;
+    height: 60px;
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-large);
+}
+
+nav li {
+    list-style: none;
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    transition: var(--transition-base);
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+nav li:hover {
+    background-color: var(--secondary-color);
+
+}
+
+
+@media (max-width: 700px) {
+    .nav-hide {
+        display: none;
+    }
+}
