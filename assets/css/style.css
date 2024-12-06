@@ -16,7 +16,7 @@
 
     /* Tipografia */
     --font-family: Arial, sans-serif;
-    --font-size-base: 1.6rem;
+    --font-size-base: 1.7rem;
     --font-size-header: 2.4rem;
 
     /* Layout e espaçamento */
@@ -24,7 +24,7 @@
     --spacing-medium: 1.5rem;
     --spacing-large: 2rem;
     --container-width: 1200px;
-    --button-max-width: 400px;
+    --button-max-width: 350px;
     --image-max-width: 100%;
 
     /* Estilo e animações */
@@ -41,6 +41,14 @@ html {
 /* Tamanho padrão da fonte no corpo */
 body {
     font-size: var(--font-size-base);
+}
+
+h1 {
+    font-size: var(--font-size-header);
+}
+
+header {
+    margin-bottom: var(--spacing-medium);
 }
 
 nav ul {
@@ -70,6 +78,61 @@ nav li:hover {
 
 }
 
+main {
+    max-width: var(--container-width);
+    margin: auto;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hero,
+.about,
+.service,
+.portfolio,
+.contact {
+    margin-bottom: var(--spacing-medium);
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    display: flex;
+    background-color: var(--main-bg-color);
+    background-image: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--light-color);
+    text-align: center;
+    gap: var(--spacing-large);
+    padding: 40px 20px;
+    border-radius: var(--border-radius);
+}
+
+.hero .cta {
+    display: block;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    text-decoration: none;
+    padding: 15px;
+    margin: 20px auto 0 auto;
+    max-width: var(--button-max-width);
+    border-radius: var(--border-radius);
+    width: 100%;
+    transition: var(--transition-base);
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
 
 @media (max-width: 700px) {
     .nav-hide {
