@@ -1,0 +1,44 @@
+/* Reset básico para margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Paleta de cores */
+    --main-bg-color: #f0f0f0;
+    --main-bg-light: #fff;
+    --main-text-color: #333;
+    --main-text-light: #ccc;
+    --primary-color: #007bff;
+    --secondary-color: #003670;
+    --light-color: #fff;
+
+    /* Tipografia */
+    --font-family: Arial, sans-serif;
+    --font-size-base: 1.6rem;
+    --font-size-header: 2.4rem;
+
+    /* Layout e espaçamento */
+    --spacing-small: 1rem;
+    --spacing-medium: 1.5rem;
+    --spacing-large: 2rem;
+    --container-width: 1200px;
+    --button-max-width: 400px;
+    --image-max-width: 100%;
+
+    /* Estilo e animações */
+    --border-radius: 8px;
+    --box-shadown: 0 3px 4px rgba(0, 0, 0, 0.2);
+    --transition-base: all 0.3s ease;
+}
+
+/* Define a escala base de fontes para facilitar o uso de rem */
+html {
+    font-size: 62.5%;
+}
+
+/* Tamanho padrão da fonte no corpo */
+body {
+    font-size: var(--font-size-base);
+}
