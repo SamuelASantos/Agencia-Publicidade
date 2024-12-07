@@ -24,7 +24,7 @@
     --spacing-medium: 1.5rem;
     --spacing-large: 2rem;
     --container-width: 1200px;
-    --button-max-width: 350px;
+    --button-max-width: 300px;
     --image-max-width: 100%;
 
     /* Estilo e animações */
@@ -47,8 +47,17 @@ h1 {
     font-size: var(--font-size-header);
 }
 
+h2 {
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: var(--spacing-large);
+}
+
 header {
     margin-bottom: var(--spacing-medium);
+    box-shadow: var(--box-shadown);
 }
 
 nav ul {
@@ -102,9 +111,11 @@ main {
 .service,
 .portfolio,
 .contact {
-    margin-bottom: var(--spacing-medium);
+    margin: var(--spacing-small);
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .hero {
@@ -132,6 +143,23 @@ main {
     animation-name: bounce;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+}
+
+.about {
+    gap: var(--spacing-medium);
+}
+
+.about img {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    border-radius: var(--border-radius);
+}
+
+.about p {
+    margin: auto;
+    max-width: 600px;
+    padding: 0 30px;
 }
 
 @media (max-width: 700px) {
