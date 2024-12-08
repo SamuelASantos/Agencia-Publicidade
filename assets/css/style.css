@@ -239,6 +239,22 @@ label {
     text-align: left;
 }
 
+footer {
+    display: flex;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+    padding: 40px 0;
+    gap: 20px;
+}
+
+footer p {
+    margin: 0 40px;
+}
+
 @media (max-width: 700px) {
     .nav-hide {
         display: none;
@@ -250,5 +266,10 @@ label {
 
     .grid {
         grid-template-columns: 1fr;
+    }
+
+    footer {
+        text-align: center;
+        flex-direction: column;
     }
 }
