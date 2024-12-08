@@ -41,6 +41,7 @@ html {
 /* Tamanho padrão da fonte no corpo */
 body {
     font-size: var(--font-size-base);
+    background-color: var(--main-bg-color);
 }
 
 h1 {
@@ -162,8 +163,33 @@ main {
     padding: 0 30px;
 }
 
+.service-area {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.service-item {
+    background-color: var(--main-bg-light);
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadown);
+}
+
+.service-icon {
+    font-size: 35px;
+}
+
+.service-item h3 {
+    margin: 10px 0;
+}
+
 @media (max-width: 700px) {
     .nav-hide {
         display: none;
+    }
+
+    .service-area {
+        flex-direction: column;
     }
 }
