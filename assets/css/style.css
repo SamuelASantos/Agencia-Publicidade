@@ -201,6 +201,44 @@ main {
     transform: scale(1.03);
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+form button {
+    display: block;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    text-decoration: none;
+    padding: 15px;
+    margin: 20px auto 0 auto;
+    border-radius: var(--border-radius);
+    border: none;
+    width: 100%;
+    transition: var(--transition-base);
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.03);
+}
+
+.contact input,
+textarea,
+label {
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    border-radius: var(--border-radius);
+    text-align: left;
+}
+
 @media (max-width: 700px) {
     .nav-hide {
         display: none;
